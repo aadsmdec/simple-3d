@@ -2,25 +2,30 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" type="text/css" href="main.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
-            },
-
-            "montageVersion": {
-                "prototype": "ui/version.reel",
-                "properties": {
-                    "element": {"#": "montageVersion"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "montageVersion": {
+            "prototype": "ui/version.reel",
+            "properties": {
+                "element": {"#": "montageVersion"}
+            }
+        },
+        "scene": {
+            "prototype": "mjs-volume/runtime/scene",
+            "properties": {
+                "path": "../../assets/3d/spacefighter/spacefighter.json"
             }
         }
+    }
     </script>
 </head>
 <body>

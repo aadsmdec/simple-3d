@@ -24,6 +24,15 @@
             "properties": {
                 "path": "../../assets/3d/spacefighter/spacefighter.json"
             }
+        },
+        "sceneView": {
+            "prototype": "mjs-volume/ui/scene-view.reel",
+            "properties": {
+                "element": {"#": "sceneView"},
+                "height": "600",
+                "scene": {"@": "scene"},
+                "width": "800"
+            }
         }
     }
     </script>
@@ -31,6 +40,9 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <div data-montage-id="montageVersion"></div>
+        <div data-montage-id="sceneView">
+            <canvas data-montage-id="canvas"></canvas>
+        </div>
     </div>
 </body>
 </html>

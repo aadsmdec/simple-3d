@@ -2,30 +2,38 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Main</title>
-
+    <title>
+        Main
+    </title>
     <link rel="stylesheet" type="text/css" href="main.css">
-
     <script type="text/montage-serialization">
-        {
-            "owner": {
-                "properties": {
-                    "element": {"#": "main"}
-                }
-            },
-
-            "montageVersion": {
-                "prototype": "ui/version.reel",
-                "properties": {
-                    "element": {"#": "montageVersion"}
-                }
+    {
+        "owner": {
+            "properties": {
+                "element": {"#": "main"}
+            }
+        },
+        "button": {
+            "prototype": "digit/ui/button.reel",
+            "properties": {
+                "element": {"#": "button"},
+                "enabled": true,
+                "label": "Button"
+            }
+        },
+        "montageVersion": {
+            "prototype": "ui/version.reel",
+            "properties": {
+                "element": {"#": "montageVersion"}
             }
         }
+    }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <div data-montage-id="montageVersion"></div>
+        <button data-montage-id="button"></button>
     </div>
 </body>
 </html>
